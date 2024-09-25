@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f9f9f9; /* Ljusare bakgrund */
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  padding: 40px; /* Ökat mellanrum runt appen */
+}
+
+/* Stil för rubriker */
+h1 {
+  color: #2c3e50; /* Mörkblå färg för rubriker */
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #34495e; /* En något ljusare blå för sektionstitlar */
+}
+
+/* Stil för Post-komponenten */
+.post {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Rundade hörn */
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Mjuk skugga för djup */
+}
+
+/* Stil för Postens titel och kropp */
+.post h3 {
+  color: #2980b9; /* Blå titel för att sticka ut */
+  margin: 0 0 10px;
+}
+
+.post p {
+  line-height: 1.6;
+  color: #555; /* Mörkgrå färg för brödtext */
+}
+
+/* Stil för knappar */
+.button {
+  background-color: #3498db; /* Blå bakgrundsfärg */
+  color: white; /* Vit textfärg */
+  border: none; /* Ingen kant */
+  border-radius: 8px; /* Rundade hörn */
+  padding: 10px 15px; /* Inre avstånd */
+  font-size: 16px; /* Teckenstorlek */
+  cursor: pointer; /* Hand-pekare */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Animering */
+  margin: 10px 0; /* Mellanrum */
+}
+
+.button:hover {
+  background-color: #2980b9; /* Mörkare blå vid hover */
+  transform: scale(1.05); /* Liten förstoring vid hover */
+}
+
+/* Stil för användarinformation */
+.user-info {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #ffffff; /* Vit bakgrund för användarinformation */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Stil för användarens detaljer */
+.user-info h4 {
+  margin-top: 0;
+  color: #2980b9; /* Samma blå färg som titlar */
+}
+
+/* Stil för PostList-komponenten */
+.post-list {
+  max-width: 800px;
+  margin: 0 auto; /* Centrera listan */
+}
+
+/* Tillgänglighetsinställningar och media queries */
+@media (max-width: 768px) {
+  .post {
+    padding: 15px; /* Minska padding på mindre skärmar */
+  }
+
+  .button {
+    width: 100%; /* Knapparna tar upp hela bredden på mindre skärmar */
+  }
+}
